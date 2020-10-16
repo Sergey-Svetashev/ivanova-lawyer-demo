@@ -4,7 +4,7 @@ import '@css/main.sass'
 import '@css/media.sass'
 import React from "react";
 import ReactDOM from "react-dom";
-import {HashRouter as Router, Switch, Route, NavLink} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route, NavLink} from 'react-router-dom';
 import {createBrowserHistory} from 'history'
 
 import Home from './home';
@@ -50,7 +50,7 @@ class App extends React.Component {
   render() {
     return (
       <Router history={createBrowserHistory}>
-        <Menu/>
+        <Menu />
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route path="/services" component={Services}/>

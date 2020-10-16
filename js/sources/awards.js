@@ -7,6 +7,16 @@ import skill_item_02 from '@i/skill_item_02.jpg'
 import skill_item_03 from '@i/skill_item_03.jpg'
 import skill_item_04 from '@i/skill_item_04.jpg'
 import skill_item_05 from '@i/skill_item_05.jpg'
+import skill_item_06 from '@i/skill_item_06.jpg'
+import skill_item_07 from '@i/skill_item_07.jpg'
+import skill_item_08 from '@i/skill_item_08.jpg'
+import skill_item_09 from '@i/skill_item_09.jpg'
+import skill_item_10 from '@i/skill_item_10.jpg'
+import skill_item_11 from '@i/skill_item_11.jpg'
+import skill_item_12 from '@i/skill_item_12.jpg'
+import skill_item_13 from '@i/skill_item_13.jpg'
+import skill_item_14 from '@i/skill_item_14.jpg'
+import skill_item_15 from '@i/skill_item_15.jpg'
 
 class Slider__cell extends React.Component {
   render() {
@@ -43,12 +53,22 @@ class Awards extends React.Component {
     };
     return (
       <Slider className="skill__slider" {...sliderOption}>
-        <Slider__cell image={skill_item_01} name={'Почетная Грамота'} />
-        <Slider__cell image={skill_pict} name={'Медаль'} class={'no-shadow'} />
-        <Slider__cell image={skill_item_02} name={'Почетная Грамота'} />
-        <Slider__cell image={skill_item_03} name={'Почетная Грамота'} />
-        <Slider__cell image={skill_item_04} name={'Почетная Грамота'} />
-        <Slider__cell image={skill_item_05} name={'Почетная Грамота'} />
+        <Slider__cell image={skill_item_01} name={'награждение адвокат воронеж'} />
+        <Slider__cell image={skill_pict} name={'медаль адвокат воронеж'} class={'no-shadow'} />
+        <Slider__cell image={skill_item_02} name={'награждение адвокат воронеж'} />
+        <Slider__cell image={skill_item_03} name={'награждение адвокат воронеж'} />
+        <Slider__cell image={skill_item_04} name={'награждение адвокат воронеж'} />
+        <Slider__cell image={skill_item_05} name={'награждение адвокат воронеж'} />
+        <Slider__cell image={skill_item_06} name={'награждение адвокат воронеж'} />
+        <Slider__cell image={skill_item_07} name={'награждение адвокат воронеж'} />
+        <Slider__cell image={skill_item_08} name={'награждение адвокат воронеж'} />
+        <Slider__cell image={skill_item_09} name={'награждение адвокат воронеж'} />
+        <Slider__cell image={skill_item_10} name={'награждение адвокат воронеж'} />
+        <Slider__cell image={skill_item_11} name={'награждение адвокат воронеж'} />
+        <Slider__cell image={skill_item_12} name={'награждение адвокат воронеж'} />
+        <Slider__cell image={skill_item_13} name={'награждение адвокат воронеж'} />
+        <Slider__cell image={skill_item_14} name={'награждение адвокат воронеж'} />
+        <Slider__cell image={skill_item_15} name={'награждение адвокат воронеж'} />
       </Slider>
     )
   }

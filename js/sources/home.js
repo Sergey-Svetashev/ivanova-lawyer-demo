@@ -7,7 +7,7 @@ import Form from './form';
 import main_photo from "@i/header_photo.png";
 import icon_qoutes from "@i/icon_qoutes.svg";
 import citation_photo from "@i/citation_photo.jpg";
-import {NavLink} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 class Home extends React.Component {
 
@@ -35,20 +35,20 @@ class Home extends React.Component {
 
   render() {
     return (
-      [
+      <div className="home">
         <header key="header">
           <div className="container">
             <div className="header__wrap">
-              <img src={main_photo} alt="Иванова Галина Анатольевна"/>
-              <div className="header__over-title">Адвокат</div>
-              <h1 className="header__title">Иванова Галина Анатольевна</h1>
+              <img src={main_photo} alt="адвокат в воронеже, адвокат, воронеж"/>
+              <h1 className="header__over-title">Адвокат</h1>
+              <h2 className="header__title">Иванова Галина Анатольевна</h2>
               <p className="header__text">Предоставляет квалифицированную юридическую помощь от консультации до
                 представительства в суде.
               </p>
               <Button isRun={this.state.isRun} clicker={this.submitRun} text="Заказать звонок"/>
             </div>
           </div>
-        </header>,
+        </header>
         <section key="skill" className="skill">
           <div className="container">
             <div className="skill__wrap">
@@ -65,7 +65,7 @@ class Home extends React.Component {
             </div>
             <Awards/>
           </div>
-        </section>,
+        </section>
         <section key="citation" className="citation">
           <div className="container">
             <h1 className="title">Мое мнение</h1>
@@ -77,16 +77,16 @@ class Home extends React.Component {
                 <img src={icon_qoutes} className="citation__decore"/>
               </div>
               <div className="citation__cell">
-                <img src={citation_photo} alt="Иванова Галина Анатольевна" className="citation__photo"/>
+                <img src={citation_photo} alt="адвокат в воронеже, адвокат, воронеж" className="citation__photo"/>
               </div>
             </div>
-            <NavLink to="/services" className="button">Посмотреть услуги и цены</NavLink>
+            <Link to="/services" className="button">Посмотреть услуги и цены</Link>
           </div>
-        </section>,
+        </section>
         <Form isRun={this.state.submitIsRun}
           closeBtn={<span className="form__close" onClick={this.submitStop}/>}
         />
-      ]
+      </div>
     )
   }
 

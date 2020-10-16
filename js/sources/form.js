@@ -9,16 +9,19 @@ class Form extends React.Component {
     return (
       <div key="form__wrap" className={submitClass}>
         <div className="form__cell">
-          <form action="" method="post">
+          <form action="./form_handler.php" method="post">
             {this.props.closeBtn}
             <h3>Задайте мне вопрос</h3>
             <div className="form__field">
-              <input type="text" placeholder="Ваш e-mail" required/>
+              <input type="text" name="fio" placeholder="Ваше имя" required/>
+            </div>
+            <div className="form__field">
+              <input type="email" name="email" placeholder="Ваш e-mail" required/>
             </div>
             <div className="form__field">
               <textarea name="letter" id="letter" placeholder="Введите сообщение" required/>
             </div>
-            <button className="button">Отправить</button>
+            <button className="button" type="submit">Отправить</button>
           </form>
         </div>
       </div>
